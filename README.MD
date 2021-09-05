@@ -18,6 +18,6 @@ VsComputer mode has self made Ai algorithm which minimizes the chances for oppon
   
 ## Screenshots
 
-![App Screenshot](https://github.com/DheerajKukreja9554/TicTacToeAndroid/blob/master/screenshots/Screenshot_1630842024.png?raw=true =100x20)
+![App Screenshot](https://github.com/DheerajKukreja9554/TicTacToeAndroid/blob/master/screenshots/Screenshot_1630842024.png?raw=true)
 ![App Screenshot](https://github.com/DheerajKukreja9554/TicTacToeAndroid/blob/master/screenshots/Screenshot_1630842046.png?raw=true)
 ![App Screenshot](https://github.com/DheerajKukreja9554/TicTacToeAndroid/blob/master/screenshots/Screenshot_1630842063.png?raw=true)
