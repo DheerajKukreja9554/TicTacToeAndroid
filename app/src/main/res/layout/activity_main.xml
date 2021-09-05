@@ -4,27 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:rotationX="0"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="450dp"
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/boardImage"
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/grid" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="60dp"
+        android:baselineAligned="false"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/status"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,17 +59,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
-                android:tag="0" />
+                android:padding="25dp"
+                android:tag="0"
+                tools:ignore="NestedWeights" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="1" />
 
             <ImageView
@@ -55,9 +80,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="2" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -71,17 +98,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
-                android:tag="3" />
+                android:padding="25dp"
+                android:tag="3"
+                tools:ignore="NestedWeights" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="4" />
 
             <ImageView
@@ -89,9 +119,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="5" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -105,17 +137,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
-                android:tag="6" />
+                android:padding="25dp"
+                android:tag="6"
+                tools:ignore="NestedWeights" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="7" />
 
             <ImageView
@@ -123,44 +158,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/symbol"
                 android:onClick="playerTap"
-                android:padding="20dp"
+                android:padding="25dp"
                 android:tag="8" />
 
+
         </LinearLayout>
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="42dp"
-        android:text="TextView"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/modebutton"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="#0D11ED"
+    <ImageButton
+        android:id="@+id/modeButton"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/ModeImage"
         android:onClick="changeMode"
-        android:shadowColor="#3F51B5"
-        android:text="TWO PLAYER"
-        android:textColor="#EF0F0F"
-        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/board"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </android.support.constraint.ConstraintLayout>

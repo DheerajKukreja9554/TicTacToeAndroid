@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TicTacToe</string>
-
+    <string name="textview">TextView</string>
+    <string name="symbol">symbol</string>
+    <string name="boardImage">grid</string>
+    <string name="ModeImage">modebutton</string>
 </resources>
